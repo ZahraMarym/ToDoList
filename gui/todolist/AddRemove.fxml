@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="507.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.todolist.AddController">
+   <children>
+      <Label layoutX="100.0" layoutY="61.0" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #191970;" text="  Add Task" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="LAsub" layoutX="19.0" layoutY="111.0" prefHeight="31.0" prefWidth="52.0" text="Subject" />
+      <Label fx:id="LAloc" layoutX="22.0" layoutY="153.0" text="Location" />
+      <Label fx:id="LAdate" layoutX="32.0" layoutY="189.0" text="Date" />
+      <Label fx:id="LAtime" layoutX="32.0" layoutY="227.0" text="Time" />
+      <Label fx:id="LAdes" layoutX="14.0" layoutY="276.0" text="Description" />
+      <TextField fx:id="TFAsub" layoutX="84.0" layoutY="114.0" prefHeight="25.0" prefWidth="171.0" />
+      <TextField fx:id="TFAloc" layoutX="84.0" layoutY="149.0" prefHeight="25.0" prefWidth="171.0" />
+      <TextField fx:id="TFAdate" layoutX="84.0" layoutY="185.0" prefHeight="25.0" prefWidth="171.0" />
+      <TextField fx:id="TFAtime" layoutX="84.0" layoutY="223.0" prefHeight="25.0" prefWidth="171.0" />
+      <TextArea fx:id="TAAdes" layoutX="84.0" layoutY="264.0" prefHeight="104.0" prefWidth="171.0" />
+      <Button fx:id="AddB1" layoutX="71.0" layoutY="381.0" onAction="#HandleAddAction" prefHeight="31.0" prefWidth="85.0" text="Add" />
+      <Button fx:id="RemoveBtn" layoutX="287.0" layoutY="375.0" onAction="#HandleRemoveAction" prefHeight="31.0" prefWidth="70.0" text="Remove" />
+      <Label layoutX="330.0" layoutY="61.0" prefHeight="31.0" prefWidth="104.0" style="-fx-background-color: #191970;" text="  Your Task" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ListOfTask" layoutX="272.0" layoutY="100.0" prefHeight="242.0" prefWidth="220.0" style="-fx-border-color: #191970; -fx-border-width: 2px 2px 2px 2px;" />
+      <TextField fx:id="TFSearch" layoutX="287.0" layoutY="17.0" />
+      <Button fx:id="SearchBTN" layoutX="441.0" layoutY="17.0" onAction="#HandleSearchAction" text="Search" />
+      <Button fx:id="BtnUpdate" layoutX="169.0" layoutY="381.0" onAction="#HandleUpdateAction" prefHeight="31.0" prefWidth="85.0" text="Update" />
+      <Button fx:id="btnSave" layoutX="373.0" layoutY="372.0" onAction="#HandleSaveAction" prefHeight="31.0" prefWidth="70.0" text="Save" />
+   </children>
+</AnchorPane>
